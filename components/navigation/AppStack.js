@@ -5,7 +5,7 @@ import {IconButton} from 'react-native-paper';
 import auth from '@react-native-firebase/auth';
 import MainPage from '../login/screens/MainPage';
 import {useNavigation} from '@react-navigation/native';
-import ReportScreen from "../login/screens/ReportScreen";
+import TimeCalculateScreen from '../login/screens/TimeCalculateScreen';
 
 const Stack = createStackNavigator();
 
@@ -80,8 +80,8 @@ const AppStack = () => {
         }}
       />
       <Stack.Screen
-        name="ReportCreate"
-        component={ReportScreen}
+        name="TimeCalculate"
+        component={TimeCalculateScreen}
         options={{
           headerStyle: {
             backgroundColor: '#f4edf9',

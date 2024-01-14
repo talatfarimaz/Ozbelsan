@@ -11,27 +11,37 @@ const MainPage = () => {
       <Card
         style={styles.mainCard}
         onPress={() => {
-          navigation.navigate('ReportCreate');
+          navigation.navigate('TimeCalculate');
         }}>
         <Card.Cover
-          source={require('../../../assets/mainTwo.png')}
-          style={{height: 200, width: 200}}
+          source={require('../../../assets/ozbel1.jpg')}
+          style={{height: 250, width: 250}}
         />
         <Card.Actions style={{alignSelf: 'center'}}>
-          <Button mode={'contained'}>Rapor Görüntüle</Button>
+          <Button
+            mode={'text'}
+            textColor={'#48b687'}
+            labelStyle={{fontSize: 16, fontWeight: 'bold'}}>
+            Mesai Saati Hesapla
+          </Button>
         </Card.Actions>
       </Card>
       <Card
         style={styles.mainCard}
         onPress={() => {
-          navigation.navigate('Home');
+          navigation.navigate('DateCalculateScreen');
         }}>
         <Card.Cover
-          source={require('../../../assets/mainOne.png')}
-          style={{height: 200, width: 200}}
+          source={require('../../../assets/ozbel2.jpg')}
+          style={{height: 250, width: 250}}
         />
         <Card.Actions style={{alignSelf: 'center'}}>
-          <Button mode={'contained'}>Rapor Oluştur</Button>
+          <Button
+            mode={'text'}
+            textColor={'#48b687'}
+            labelStyle={{fontSize: 16, fontWeight: 'bold'}}>
+            Mesai Başlangıç Tarihi Hesapla
+          </Button>
         </Card.Actions>
       </Card>
     </ScrollView>
